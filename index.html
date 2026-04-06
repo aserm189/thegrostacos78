@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gros Tacos</title>
-    <style>
-        #hiddenText {
-            display: block;
-        }
-    </style>
+  <title>Surprise spéciale 💍</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+    #specialImage {
+      display: none;
+      width: 400px;
+      margin-top: 20px;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+    #specialText {
+      display: none;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #ffcc00;
+    }
+    #newImage {
+      display: none;
+      width: 1200px;
+      margin-top: 20px;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 22px;
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+      border: 2px solid #ffcc00;
+      border-radius: 8px;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
 </head>
 <body>
-    <h1>Veux-tu m'épouser ? 💍</h1>
-    <img id="tacoImage" src="https://www.keepersecurity.com/blog/wp-content/uploads/2024/08/Blog-Infographic3-1024x441.png" width="800px" style="display:none;"/>
-    <button id="showButton">Clique!</button>
 
-    <script>
-        document.getElementById('showButton').onclick = function() {
-            document.getElementById('tacoImage').style.display = 'block';
-        };
-        setTimeout(function() {
-            document.querySelector('h1').style.display = 'none';
-        }, 3000);
-    </script>
+<h1>Ose cliquer ici… 😏</h1>
+<button onclick="showSpecial()">Clique !</button>
+
+<img id="specialImage" src="https://i.pinimg.com/736x/78/da/e2/78dae2a4663463696abeb7185ee596cf.jpg">
+<div id="specialText">Veux‑tu m'épouser ? 💍</div>
+
+<img id="newImage" src="https://www.keepersecurity.com/blog/wp-content/uploads/2024/08/Blog-Infographic3-1024x441.png">
+
+<script>
+function showSpecial() {
+  document.getElementById("specialImage").style.display = "block";
+  document.getElementById("specialText").style.display = "block";
+  
+  setTimeout(function() {
+    document.getElementById("specialImage").style.display = "none";
+    document.getElementById("specialText").style.display = "none";
+    document.getElementById("newImage").style.display = "block";
+  }, 3000);
+}
+</script>
+
 </body>
 </html>
