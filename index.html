@@ -1,57 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Surprise spéciale 💍</title>
-  <style>
-    body {
-      text-align: center;
-      margin-top: 50px;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
-    }
-    #specialImage {
-      display: none;
-      width: 400px;
-      margin-top: 20px;
-      border: 5px solid white;
-      border-radius: 10px;
-    }
-    #specialText {
-      display: none;
-      font-size: 28px;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #ffcc00;
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 22px;
-      cursor: pointer;
-      background-color: #222;
-      color: white;
-      border: 2px solid #ffcc00;
-      border-radius: 8px;
-    }
-    button:hover {
-      background-color: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grostacos</title>
+    <script>
+        setTimeout(() => {
+            document.getElementById('text').style.display = 'none';
+        }, 3000);
+    </script>
 </head>
 <body>
-
-<h1>Ose cliquer ici… 😏</h1>
-<button onclick="showSpecial()">Clique !</button>
-
-<img id="specialImage" src="https://i.pinimg.com/736x/78/da/e2/78dae2a4663463696abeb7185ee596cf.jpg">
-<div id="specialText">Veux‑tu m'épouser ? 💍</div>
-
-<script>
-function showSpecial() {
-  document.getElementById("specialImage").style.display = "block";
-  document.getElementById("specialText").style.display = "block";
-}
-</script>
-
+    <img src="NEW_IMAGE_URL_HERE" width="800px" alt="The Grostacos">
+    <div id="text">This text will disappear after 3 seconds.</div>
 </body>
 </html>
