@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Grostacos</title>
-    <script>
-        setTimeout(() => {
-            document.getElementById('text').style.display = 'none';
-        }, 3000);
-    </script>
+    <title>The Gros Tacos</title>
+    <style>
+        #hiddenText {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <img src="NEW_IMAGE_URL_HERE" width="800px" alt="The Grostacos">
-    <div id="text">This text will disappear after 3 seconds.</div>
+    <h1>Veux-tu m'épouser ? 💍</h1>
+    <img id="tacoImage" src="https://www.keepersecurity.com/blog/wp-content/uploads/2024/08/Blog-Infographic3-1024x441.png" width="800px" style="display:none;"/>
+    <button id="showButton">Clique!</button>
+
+    <script>
+        document.getElementById('showButton').onclick = function() {
+            document.getElementById('tacoImage').style.display = 'block';
+        };
+        setTimeout(function() {
+            document.querySelector('h1').style.display = 'none';
+        }, 3000);
+    </script>
 </body>
 </html>
